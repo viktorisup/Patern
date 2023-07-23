@@ -13,6 +13,7 @@ def render(template_name, folder='templates', **kwargs):
     # Открываем шаблон по имени
     with open(file_path, encoding='utf-8') as f:
         # Читаем
+
         template = Template(f.read())
     # рендерим шаблон с параметрами
     return template.render(**kwargs)
